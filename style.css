@@ -6,7 +6,7 @@
 }
 
 :root {
-    --main-bg-color: rgb(240, 240, 240);
+    --main-bg-color: rgb(250, 250, 255);
     --main-txt-color: #505050;
     --main-container-color: white;
     --hover-color: #ffb623;
@@ -161,13 +161,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--main-container-color);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.025), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 
 }
 
 .main-container {
     width: 90vw;
-    marign: 0 auto;
+    margin: 0 auto;
 }
 
 .main-menu-links {
@@ -195,6 +195,7 @@ body {
 .header-links a {
     padding: 1vw;
     font-size: 1.5vw;
+    font-weight: bold;
 }
 
 .header-links a:last-child {
@@ -237,8 +238,7 @@ body {
 }
 
 .slider .logo {
-    margin-top: 5vw;
-    font-size: 3vw;
+    margin-top: 20vw;
 }
 
 .slider h1 {
@@ -249,40 +249,41 @@ body {
     margin-bottom: 0.1em;
 }
 .slider .logo h1 {
-    font-size: 4vw;
+    font-size: 6vw;
+    letter-spacing: 0.05em;
 }
 .slider .logo p {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-top: 0.8vw;
+    letter-spacing: 0.05em;
 }
-.arrows {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 0;
-    padding: 0 2%;
-    color: var(--main-container-color);
-}
+/*.arrows {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    z-index: 0;*/
+/*    padding: 0 2%;*/
+/*    color: var(--main-container-color);*/
+/*}*/
 
-.arrows i {
-    transition: color 0.2s ease;
-    font-size: 48px;
-    border: 1px solid var(--main-container-color);
-    border-radius: 10%;
-    background-color: #ededed60;
-}
+/*.arrows i {*/
+/*    transition: color 0.2s ease;*/
+/*    font-size: 48px;*/
+/*    border: 1px solid var(--main-container-color);*/
+/*    border-radius: 10%;*/
+/*    background-color: #ededed60;*/
+/*}*/
 
-.arrows i:hover {
-    cursor: pointer;
-    color: var(--hover-color);
-    background-color: #edededc7;
-}
+/*.arrows i:hover {*/
+/*    cursor: pointer;*/
+/*    color: var(--hover-color);*/
+/*    background-color: #edededc7;*/
+/*}*/
 
 .fa {
-    padding: 0.5%;
-    margin: 0.5%;
-    margin-top: 1vw;
+    padding: 0.4%;
+    margin: 1vw 1% 1%;
     font-size: 1.2vw;
     width: 1.2vw;
     height: 1.2vw;
@@ -304,21 +305,24 @@ body {
 }
 
 .contact-or-checkcv h2 {
-    padding: 2.5vw;
+    padding-top: 2.5vw;
     font-weight: lighter;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
+    color: black;
+    letter-spacing: 0.04em;
 }
 
 .contact-or-checkcv a {
     box-sizing: border-box;
     background: rgb(255, 175, 47);
-    background: linear-gradient(90deg, rgba(255, 175, 47, 1) 0%, rgba(255, 175, 47, 1) 86%, rgba(255, 197, 47, 1) 96%);
+    background: linear-gradient(90deg, rgb(252, 124, 16) 0%, rgba(255, 175, 47, 1) 86%, rgba(255, 197, 47, 1) 96%);
     color: white;
     text-decoration: none;
-    padding: 2% 6%;
+    padding: 3% 6%;
     margin: 5% 5%;
     border-radius: 10px;
     border: 1px solid white;
+    font-weight: bold;
 }
 
 .contact-or-checkcv-buttons {
@@ -338,23 +342,37 @@ body {
     color: var(--hover-color);
 }
 
-.about-me {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1vw;
+    font-size: 1.6vw;
+    font-weight: bold;
 
 }
 
-.about-me h2 {
+.section h2 {
     margin-top: 2vw;
-    margin-left: 7vw;
+    margin-bottom: 1vw;
     align-self: flex-start;
     font-weight: bold;
+    color: black;
+    letter-spacing: 0.1em;
 }
-
-.about-me .container {
-    max-width: 85vw;
+.section .about-me-header {
+    margin-left: 7vw;
+}
+.section .skills-header {
+    margin-left: 30vw;
+}
+.section .portfolio-header {
+    margin-left: 40vw;
+}
+.spacing {
+    height: 12vw;
+}
+.section .container {
+    width: 85vw;
     align-items: center;
     justify-content: space-around;
 
@@ -366,46 +384,75 @@ body {
 
 .photo {
     box-sizing: border-box;
-    padding: 1%;
-    /*margin: 1%;*/
-    width: 5vw;
-    height: 5vw;
-    /*max-width: 10%;*/
-    /*height: 100%;*/
+    width: 7vw;
+    height: 7vw;
     background-image: url("img/profile-photo.jpg");
-    background-position: 0% 20%;
+    background-position: 0 20%;
     border-radius: 50%;
-
     background-size: cover;
     align-self: flex-start;
-    /*margin-left: 3vw;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
+.section .container .photo {
+    margin: 3%;
+}
 
 .personal-data {
     width: 25%;
     height: 100%;
-    /*margin: 1.5vw;*/
-
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    padding: 2% 0;
 }
 
 .personal-data p {
     color: var(--hover-color);
-    font-size: 1vw;
+    font-size: 1.2vw;
+    line-height: 2.2;
 }
 
 .personal-data p span {
-    color: var(--main-txt-color);
+    color: black;
 }
 
 .container .detailed-personal-data {
-    font-size: 1vw;
-    width: 50%;
     height: 100%;
-    font-weight: lighter;
-    /*margin: 1.5vw;*/
+    font-size: 1.1vw;
+    width: 50%;
+    letter-spacing: 0.06em;
+    font-weight: 600;
     border-left: 3px dotted var(--hover-color);
-    padding-left: 2vw;
+    padding: 2% 2% 2% 2vw;
+    line-height: 2.5;
+}
+div:has(+ .skills-header), div:has(+ .portfolio-header) {
+    margin-top: 4vw;
+}
+.skill {
+    width: 33%;
+    height: 18vw;
+    margin: 4vw;
+    border-left: 3px dotted var(--hover-color);
+}
+.skill:first-child {
+    border: none;
+}
+.skill .logo {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 5% auto;
+}
+.skill .title, .skill .description {
+    width: 100%;
+    text-align: center;
+}
+.skill .title {
+    color: var(--hover-color);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.skill .description {
+    /*font-weight: 400*/
 }
 /*.skills {*/
 /*    display: flex;*/
