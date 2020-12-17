@@ -15,29 +15,7 @@
 
 <body>
 <div class="main-container">
-    <div class="main-menu">
-        <nav role="navigation">
-            <div class="side-menu-toggle">
-                <input type="checkbox"/>
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="side-menu">
-                        <a href="#1" class="sm-device">
-                            <li>O mnie</li>
-                        </a>
-                        <a href="#2" class="sm-device">
-                            <li>Umiejętności</li>
-                        </a>
-                        <a href="#3" class="sm-device">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="#4" class="sm-device">
-                            <li>Kontakt</li>
-                        </a>
-                </ul>
-            </div>
-        </nav>
+    <div class="main-menu sticky">
         <div class="header-links">
             <a href="#1" class="main-menu-links">
                 O mnie
@@ -58,22 +36,17 @@
             <h1>Cześć wszystkim!</h1>
             <p>Nazywam się Karolina.</p>
             <div class="contact-links">
-                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/feed/" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://www.youtube.com/feed/" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://gitlab.com/kgutka" target="_blank" class="fa fa-gitlab"></a>
+                <a href="https://www.linkedin.com/in/kgutka/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://github.com/kgutka" target="_blank" class="fa fa-github"></a>
             </div>
         </div>
-        <!--		<div class="arrows">-->
-        <!--			<i class="material-icons left-arrow">keyboard_arrow_left</i>-->
-        <!--			<i class="material-icons right-arrow">keyboard_arrow_right</i>-->
-        <!--		</div>-->
 
     </div>
     <div class="container contact-or-checkcv">
         <h2>Chętnie podejmę się nowych projektów!</h2>
         <div class="contact-or-checkcv-buttons">
-            <a href="mailto:example@mail.com">Napisz do mnie</a>
+            <a href="mailto:karolina.gutka.97@gmail.com">Napisz do mnie</a>
             <a href="#">Sprawdź moje CV</a>
         </div>
     </div>
@@ -87,7 +60,7 @@
                 <p><span>Wiek: </span>23</p>
                 <p><span>Profil: </span>Frontend</p>
                 <p><span>Telefon kontaktowy: </span>+48 888 888 888</p>
-                <p><span>E-mail: </span>example@email.com</p>
+                <p><span>E-mail: </span>karolina.gutka.97@gmail.com</p>
             </div>
             <div class="detailed-personal-data">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate distinctio ea
@@ -126,21 +99,74 @@
     <div class="spacing"></div>
     <div class="section" id="3">
         <h2 class="portfolio-header">Portfolio</h2>
-        <div class="container">
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+        <div class="container grid">
+            <div class="project1">
+                <div class="layer">
+                    <h2>Design</h2>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque fugit incidunt iste quaerat,
+                        unde.
+                    </div>
+                    <a href="#">Wyświetl</a>
+                </div>
+            </div>
+            <div class="project2"></div>
+            <div class="project3"></div>
+            <div class="project4"></div>
+            <div class="project5">
+                <div class="layer">
+                    <h2>Design project</h2>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque fugit incidunt iste quaerat,
+                        unde.
+                    </div>
+                    <a href="#">Wyświetl</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="spacing"></div>
     <div class="section" id="4">
-        <h2 class="contact-header">Kontakt</h2>
+        <h2 class="contact-header">Contact me</h2>
         <div class="container">
-            <div class="project"></div>
-            <div class="project"></div>
+            <div class="contact-info">
+                <div>
+                    <i class="fa fa-mail"></i>
+                    <div class="request">
+                        Please describe your question.
+                        Send me a message and I will answer as soon as possible!
+                    </div>
+                </div>
+                <div>
+                    <div class="section-contact-links">
+                        <a href="https://gitlab.com/kgutka" target="_blank" class="fa fa-gitlab"></a>
+                        <a href="https://www.linkedin.com/in/kgutka/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/kgutka" target="_blank" class="fa fa-github"></a>
+                    </div>
+                    <div class="adress">
+                        <p>Karolina Gutka <br>
+                            Poland, Kraków </p>
+                        ul. XXX XX/X XX-XXX <br>
+                        +48 888 888 888 <br>
+                        karolina.gutka.97@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="flex">
+                    <div class="arrow-right"></div>
+                    <h2>Let's start!</h2>
+                </div>
+
+                <form>
+                    <input type="text" id="fname" name=firstname" placeholder="Name">
+                    <input type="email" id="femail" name="email" placeholder="Your e-mail adress">
+                    <input type="text" id="ftopic" name="topic" placeholder="Topic">
+                    <textarea id="fmessage" name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
+    <div class="spacing"></div>
 </div>
 </body>
 </html>
