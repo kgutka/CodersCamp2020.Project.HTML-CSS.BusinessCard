@@ -109,9 +109,8 @@ div.sticky {
 .slider {
     width: 100%;
     height: 40vw;
-    background-image: url('https://www.thesolutionsjournal.com/wp-content/uploads/2020/05/09.-Tropical-forest-landscape-Malaysia-1.jpg');
+    background-image: url('./img/slider.png');
     background-size: cover;
-    background-position: 30% 70%;
 }
 .slider .logo {
     margin-top: 20vw;
@@ -428,7 +427,7 @@ div[class*="project"]{
     margin: 0;
     width: 40%;
     height: 45rem;
-    background-color: var(--hover-color);
+    background-color: rgb(252, 126, 16);
 }
 .container .arrow-container {
     width: 3%;
@@ -471,7 +470,7 @@ div[class*="project"]{
     margin: 0;
     border-top: 2rem solid transparent;
     border-bottom: 2rem solid transparent;
-    border-left: 2rem solid var(--hover-color);
+    border-left: 2rem solid rgb(252, 126, 16);
     margin-top: calc(2vw - 1rem);
 }
 .contact-form .flex h2{
