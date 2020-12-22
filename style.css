@@ -622,7 +622,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     background-color: white;
-    padding: 1%;
+    padding: 1% 0;
 }
 
 .dog-container {
