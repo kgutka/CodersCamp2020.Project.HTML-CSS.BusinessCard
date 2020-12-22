@@ -275,7 +275,7 @@ div.sticky {
     box-sizing: border-box;
     width: 5vw;
     height: 5vw;
-    background-image: url("img/profile-photo.jpg");
+    background-image: url("img/profile-photo.png");
     background-position: 0 20%;
     border-radius: 50%;
     background-size: cover;
