@@ -22,7 +22,7 @@ Nie korzystano z JavaScriptu ani żadnego innego frameworka.
 Nie korzystano też z gotowych bibliotek styli takich jak Bootstrap.
 
 
-### Opis projektu
+## Opis projektu
 Przy wykonaniu projektu wzorowałam się na szablonie dostępnym pod linkiem:
 https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
 
@@ -45,4 +45,40 @@ Break points zostały podzielone na:
 * 1200px,
 * 1450px.
 
+### Header
+Nagłówek wygląda podobnie na urządzeniach mobilnych oraz desktopowych.
+Na stronie wykorzystałam Sticky Menu, dzięki czemu jest ono widoczne w każdym miejscu podczas przeglądania strony.
+![Header](./docs/header.png)
 
+### About me
+W tej sekcji umieściłam informacje taki jak: imię, wiek, profil pracy, numer telefonu i adres e-mail oraz napisałam kilka słów o sobie (na potrzeby dema - Lorem Ipsum).
+![About-me](./docs/about-me.png)
+
+Wygląd sekcji na urządzeniu mobilnym:
+![About-me-mobile](./docs/about-me-mobile.jpg)
+
+### Skills
+Każda umiejętność mieści się w jednym kafelku.
+![Skills](./docs/skills.png)
+
+### Portfolio
+Galeria projektów została utworzona przy pomocy grid'a, każdy projekt mieści się w innym kafelku.
+![Portfolio](./docs/portfolio.jpg)
+
+Po najechaniu na obrazek pojawia się opis projektu z linkiem do niego.
+Przykład:
+![Portfolio-hover](./docs/portfolio-hover.jpg)
+
+### Contact
+Ta sekcja zawiera 6 metod kontaktu ze mną, poprzez:
+* formularz na stronie,
+* numer telefonu,
+* adres e-mail,
+* profil na GitLabie,
+* profil na LinkedInie,
+* profil na GitHubie.
+![Contact](./docs/contact.png)
+
+### Stopka
+W stopce została umieszczona animacja pieska.
+![Footer](./docs/footer.png)
