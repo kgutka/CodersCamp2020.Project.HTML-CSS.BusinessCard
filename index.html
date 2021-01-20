@@ -36,9 +36,9 @@
             <h1>Welcome!</h1>
             <p>My name is Karolina.</p>
             <div class="contact-links">
-                <a href="https://gitlab.com/kgutka" target="_blank" class="fa fa-gitlab"></a>
-                <a href="https://www.linkedin.com/in/kgutka/" target="_blank" class="fa fa-linkedin"></a>
                 <a href="https://github.com/kgutka" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/kgutka/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://gitlab.com/kgutka" target="_blank" class="fa fa-gitlab"></a>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
         <h2>I am happy to help you with any problem!</h2>
         <div class="contact-or-checkcv-buttons">
             <a href="mailto:karolina.gutka.97@gmail.com">Contact me!</a>
-            <a href="#">Check my CV</a>
+            <a href="CV_KGutka.pdf" target="_blank" download>Check my CV</a>
         </div>
     </div>
 
@@ -55,21 +55,27 @@
         <h2 class="about-me-header">About me</h2>
         <div class="container">
             <div class="my-data">
-                <div>
+                <div class="short-info">
                     <div class="photo"></div>
                     <div class="personal-data">
                         <p><span>Name: </span>Karolina</p>
                         <p><span>Age: </span>23</p>
                         <p><span>Profile: </span>Frontend</p>
-                        <p><span>Telephone: </span>+48 888 888 888</p>
-                        <p><span>E-mail: </span>karolina.gutka.97@gmail.com</p>
+                        <p class="email-link"><span>E-mail: </span>
+                            <a href="mailto:karolina.gutka.97@gmail.com">karolina.gutka.97@gmail.com</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="detailed-personal-data">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate distinctio ea
-                    eius exercitationem laudantium libero maxime nihil praesentium qui saepe, totam velit vitae!
-                    Aliquam, ducimus, fugit harum, incimpora tenetur vel voluptas.
+                    I've started my programming journey during my studies and I'm especially interested in web development.
+                    <br>
+                    Technologies I feel best with is <span class="programming-lang">JavaScript</span> and
+                    <span class="programming-lang">Python</span>. Currently I'm taking part in bootcamp (CodersCamp) where
+                    I have an opportunity to work with others on projects using git and get to know new technologies such
+                    as: <span class="programming-lang">TypeScript</span>, <span class="programming-lang">Node.js</span>,
+                    <span class="programming-lang">React</span> and <span class="programming-lang">Redux</span>. At the
+                    free time I train my dog and workout.
                 </div>
             </div>
 
@@ -82,26 +88,26 @@
             <div class="skills-container">
                 <div class="skill">
                     <img class="logo" alt="skill1-logo"
-                         src="https://kwiatek.pro/wp-content/uploads/2016/12/html5-logo.png">
-                    <div class="title">HTML</div>
+                         src="https://www.seekpng.com/png/full/80-803501_javascript-logo-logo-de-java-script-png.png">
+                    <div class="title">JavaScipt</div>
                     <div class="description">
-                        Lorem ipsum dolor sit
+                        + HTML, CSS
                     </div>
                 </div>
                 <div class="skill">
                     <img class="logo" alt="skill2-logo"
-                         src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png">
-                    <div class="title">CSS</div>
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png">
+                    <div class="title">TypeScript</div>
                     <div class="description">
-                        Lorem ipsum dolor sit
+                        Basics
                     </div>
                 </div>
                 <div class="skill">
                     <img class="logo" alt="skill3-logo"
-                         src="https://www.seekpng.com/png/full/80-803501_javascript-logo-logo-de-java-script-png.png">
-                    <div class="title">JavaScript</div>
+                         src="https://miro.medium.com/max/400/1*7xUxphx7WwttvlFu5gVvVw.png">
+                    <div class="title">Node.js</div>
                     <div class="description">
-                        Lorem ipsum dolor sit
+                        Skill in progress.. ;)
                     </div>
                 </div>
             </div>
@@ -114,12 +120,14 @@
         <div class="container grid">
             <div class="project1">
                 <div class="layer">
-                    <h2>Design</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque fugit incidunt iste
-                        quaerat,
-                        unde.
+                    <h2>News service</h2>
+                    <div>
+                        Tech: Vanilla JS, pure CSS and HTML, tests in JEST. <br>
+                        6 developers - each person created his own subpage.<br>
+                        I used external REST API - <a class="weatherapi-link" href="https://openweathermap.org/api"> Open Weather API</a> to get all needed data. <br>
+
                     </div>
-                    <a href="#">View</a>
+                    <a class="view-project-button" href="https://jkopyto.github.io/CodersCamp2020.Project.JavaScript.NewsService/#weather">View</a>
                 </div>
             </div>
             <div class="project2">
@@ -129,7 +137,7 @@
                         quaerat,
                         unde.
                     </div>
-                    <a href="#">View</a>
+                    <a class="view-project-button" href="#">View</a>
                 </div>
             </div>
             <div class="project3">
@@ -139,7 +147,7 @@
                         quaerat,
                         unde.
                     </div>
-                    <a href="#">View</a>
+                    <a class="view-project-button" href="#">View</a>
                 </div>
             </div>
             <div class="project4">
@@ -149,7 +157,7 @@
                         quaerat,
                         unde.
                     </div>
-                    <a href="#">View</a>
+                    <a class="view-project-button" href="#">View</a>
                 </div>
             </div>
             <div class="project5">
@@ -160,7 +168,7 @@
                         quaerat,
                         unde.
                     </div>
-                    <a href="#">View</a>
+                    <a class="view-project-button" href="#">View</a>
                 </div>
             </div>
         </div>
@@ -175,6 +183,9 @@
                     <div class="request">
                         Please describe your question.
                         Send me a message and I will answer as soon as possible!
+                        <br><br>
+                        <p style="font-size: 1rem">* Form on the right is not working (the aim of this project was to build
+                            a website with pure html, css.)<br><br>Please contact me via e-mail instead.</p>
                     </div>
                 </div>
                 <div>
@@ -186,14 +197,9 @@
                     <div class="address">
                         <p>Karolina Gutka <br>
                             Poland, Kraków </p>
-                        aleja Adama Mickiewicza 30, 30-059 <br>
-                        +48 888 888 888 <br>
-                        karolina.gutka.97@gmail.com
+                        <a href="mailto:karolina.gutka.97@gmail.com">karolina.gutka.97@gmail.com</a>
                     </div>
                 </div>
-            </div>
-            <div class="arrow-container">
-                <div class="arrow-right"></div>
             </div>
             <div class="contact-form">
                 <h2>Let's start!</h2>
