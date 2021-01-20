@@ -266,20 +266,25 @@ div.sticky {
     align-items: center;
 }
 
-.my-data div {
+.my-data .short-info {
     display: flex;
     align-content: center;
 }
 
 .photo {
     box-sizing: border-box;
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     background-image: url("img/profile-photo.png");
     background-position: 0 20%;
     border-radius: 50%;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: all .5s;
+}
+
+.photo:hover {
+    transform: scale(1.1)
 }
 
 
@@ -299,6 +304,16 @@ div .personal-data {
     color: black;
 }
 
+.email-link a {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.address a {
+    text-decoration: none;
+    color: white;
+}
+
 .detailed-personal-data {
     height: 100%;
     width: 50%;
@@ -306,10 +321,20 @@ div .personal-data {
     font-weight: 400;
     border-left: 0.3rem dotted var(--hover-color);
     padding: 2% 2% 2% 2vw;
-    line-height: 2.5;
+    line-height: 2;
     color: black;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.my-data:hover .programming-lang {
+    font-weight: bolder;
+    color: var(--hover-color)
+}
+
+.programming-lang {
+    transition: all .4s ease-in-out;
+
 }
 
 .skills-container {
@@ -328,6 +353,15 @@ div .personal-data {
     border-left: 0.3rem dotted var(--hover-color);
     margin: 3% 3% 3% 0;
     padding-left: 3%;
+
+}
+
+.skill * {
+    transition: all .1s ease-in-out;
+}
+
+.skill:hover * {
+    transform: scale(1.1)
 }
 
 .skills-container .skill:first-child {
@@ -358,11 +392,17 @@ div .personal-data {
     font-size: 1.5rem;
 }
 
+.skill img {
+
+}
+
 .section .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100vw;
 }
+
+
 
 .section .grid div[class*="project"] div > * {
     margin: 3vw;
@@ -392,7 +432,7 @@ div .personal-data {
 
     opacity: 0;
     margin: 0;
-    background: linear-gradient(180deg, rgba(252, 138, 16, 0.1) 0%, rgba(252, 146, 16, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(24, 16, 16, 0.8) 0%, rgba(24, 16, 16, 0.7) 40%, rgba(252, 146, 16, 0.5) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -409,7 +449,7 @@ div[class*="project"] {
     position: relative;
 }
 
-.section .grid div[class*="project"] div a {
+.section .grid div[class*="project"] div .view-project-button {
     box-sizing: border-box;
     background: rgb(255, 175, 47);
     background: linear-gradient(90deg, rgb(252, 124, 16) 0%, rgba(255, 175, 47, 1) 86%, rgba(255, 197, 47, 1) 96%);
@@ -429,6 +469,16 @@ div[class*="project"] {
     background: white;
     color: var(--hover-color);
 }
+.section .grid div[class*="project"] div .weatherapi-link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.section .grid div[class*="project"] div .weatherapi-link:hover {
+    border: none;
+    background-color: inherit;
+}
 
 .container .project5 .layer div {
     width: 50%;
@@ -442,6 +492,10 @@ div[class*="project"] {
 
 }
 
+.project1:hover {
+    background: url('img/project1.png');
+}
+
 .project2 {
     background: url('https://images.pexels.com/photos/5081918/pexels-photo-5081918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 40% 100%;
     background-size: cover;
@@ -450,7 +504,7 @@ div[class*="project"] {
 }
 
 .project3 {
-    background: url('https://images.pexels.com/photos/1581632/pexels-photo-1581632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background: url('https://images.pexels.com/photos/1581632/pexels-photo-1581632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 40% 100%;
     background-size: cover;
     background-repeat: no-repeat;
     grid-column: 8 / 12;
