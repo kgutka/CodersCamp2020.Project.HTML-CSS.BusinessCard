@@ -392,10 +392,6 @@ div .personal-data {
     font-size: 1.5rem;
 }
 
-.skill img {
-
-}
-
 .section .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -536,12 +532,6 @@ div[class*="project"] {
     background-color: rgb(252, 126, 16);
 }
 
-.container .arrow-container {
-    width: 3%;
-    height: 45rem;
-    margin: 0;
-}
-
 .container .contact-form {
     display: flex;
     flex-direction: column;
@@ -574,6 +564,10 @@ div[class*="project"] {
     line-height: 1.8rem;
     margin-top: 8%;
 }
+.request p {
+    font-size: 1rem;
+    line-height: 1rem;
+}
 
 .contact-info div div {
     margin-left: 0;
@@ -597,19 +591,17 @@ div[class*="project"] {
 }
 
 .contact-form .flex {
-    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem 0 0;
     justify-content: space-between;
     width: 20%;
 }
 
 .section-contact-links a {
     padding: 1%;
-    margin: 0;
-    margin-right: 6%;
+    margin: 0 6% 0 0;
 }
 
 .contact-info div .address {
@@ -1169,6 +1161,9 @@ button[type="submit"]:hover {
     .header-links .main-menu-links {
         font-size: 1rem;
     }
+    .request p {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1232,6 +1227,10 @@ button[type="submit"]:hover {
         height: 25rem;
     }
 
+    .address a {
+        font-size: 0.6rem;
+    }
+
     form > * {
         padding: 0.8rem;
         margin: 0.3rem 0;
@@ -1282,14 +1281,6 @@ button[type="submit"]:hover {
 
     .container .contact-form {
         width: 49%;
-    }
-
-    .arrow-container .arrow-right {
-        margin: 0;
-        border-top: 1rem solid transparent;
-        border-bottom: 1rem solid transparent;
-        border-left: 1rem solid rgb(252, 126, 16);
-        margin-top: calc(2vw - 0.5rem);
     }
 
     h2 {
