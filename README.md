@@ -1,7 +1,7 @@
 # CodersCamp 2020 - Projekt HTML & CSS
 **Projekt — Wizytówka / Portfolio wykonany w ramach bootcampu CodersCamp** 
 
-[Link do mojego portfolio](https://kgutka.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
+[Link do mojego portfolio](https://kgutka.github.io/portfolio/)
 
 ### W projekcie postarałam się zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
 - Box-model
